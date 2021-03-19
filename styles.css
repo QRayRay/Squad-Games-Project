@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    padding: 10px;
+    background: linear-gradient(to bottom, rgb(192, 12, 12), #ece7ea);
+  }
+  
+  /* Header/Blog Title */
+  .header {
+    display: inline;
+    text-align:center;
+    margin:auto;
+    flex:1;
+    width:100%;
+    height:auto;
+  }
+  
+  .header h1 {
+    font-size: 50px;
+    color: orange;
+  }
+  
+.logo {
+  float: center;
+  display: block;
+  text-align: center;
+  padding-bottom: 20px;
+  border-radius: 60px;
+}
+
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: rgb(255, 189, 89);
+    border-color: orange;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 40px;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: rgb(192, 12, 12);
+    color: whitesmoke;
+  }
+  
+
+  /* Left column */
+  .leftcolumn {   
+    float: left;
+    width: 75%;
+  
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    padding: 10px
+  }
+  
+  /* Fake image */
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+    background-color: rgb(255, 189, 89);
+    padding: 20px;
+    margin-top: 20px;
+    border-style: solid;
+    border-color: rgb(192, 12, 12);
+    border-radius: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+    border-color: rgb(192, 12, 12);
+    border-radius: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .footer a {
+    display: inline-block;
+    color: whitesmoke;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+  }
+
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
+
+
+ .column1of3, .column2of3, .column3of3 {
+  float: left;
+  width: 32%;
+  margin: 12px;
+ }
+
+ .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-github {
+  background: #2c4762;
+  color: white;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
