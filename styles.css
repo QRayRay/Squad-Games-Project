@@ -27,87 +27,41 @@
   float: center;
   display: block;
   text-align: center;
-  padding-bottom: 20px;
-  border-radius: 60px;
+  padding-bottom: 40px;
+  border-radius: 10%;
 }
 
   /* Style the top navigation bar */
-  .topnav {
+  .nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     overflow: hidden;
-    margin: 27px auto 0;
-
-	position: relative;
-	width: 590px;
-	height: 50px;
-	background-color: #34495e;
-	border-radius: 8px;
-	font-size: 0;
-  }
+    background-color: #333;
+    border-style: solid;
+    border-color: rgb(255, 189, 89);
+    border-radius: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} 
+  
   
   /* Style the topnav links */
-  .topnav a {
-    line-height: 50px;
-    height: 100%;
-    font-size: 15px;
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-    text-decoration: none;
-    text-transform: uppercase;
-    text-align: center;
-    color: white;
-    cursor: pointer;
+  .nav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
   }
   
-  nav .animation {
-    position: absolute;
-    height: 100%;
-    top: 0;
-    z-index: 0;
-    transition: all .5s ease 0s;
-    border-radius: 8px;
-  }
-  a:nth-child(1) {
-    width: 100px;
-  }
-  a:nth-child(2) {
-    width: 110px;
-  }
-  a:nth-child(3) {
-    width: 100px;
-  }
-  a:nth-child(4) {
-    width: 160px;
-  }
-  a:nth-child(5) {
-    width: 120px;
-  }
-  nav .start-home, a:nth-child(1):hover~.animation {
-    width: 100px;
-    left: 0;
-    background-color: #1abc9c;
-  }
-  nav .start-about, a:nth-child(2):hover~.animation {
-    width: 110px;
-    left: 100px;
-    background-color: #e74c3c;
-  }
-  nav .start-blog, a:nth-child(3):hover~.animation {
-    width: 100px;
-    left: 210px;
-    background-color: #3498db;
-  }
-  nav .start-portefolio, a:nth-child(4):hover~.animation {
-    width: 160px;
-    left: 310px;
-    background-color: #9b59b6;
-  }
-  nav .start-contact, a:nth-child(5):hover~.animation {
-    width: 120px;
-    left: 470px;
-    background-color: #e67e22;
-  }
+.nav a:hover {
+  background: linear-gradient(45deg, #333333, #626b73);
+  box-shadow: 0px 4px 30px rgba(63, 65, 67, 0.6);
+}
   
+  
+ 
 
   /* Left column */
   .leftcolumn {   
@@ -177,7 +131,7 @@
   
   /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
   @media screen and (max-width: 400px) {
-    .topnav a {
+    .nav a {
       float: none;
       width: 100%;
     }
@@ -194,15 +148,14 @@
   display: inline-flex;
       width: 55px;
       height: 55px;
-      margin: 15px;
+      margin: 20px;
       border-radius: 50%;
       align-items: center;
       justify-content: center;
       color: #fff;
-      background: #405de6;
       box-shadow: 0px 7px 30px rgba(43,98,169,0.5);
       position: relative;
-      font-size: 21px;
+      font-size: 30px;
       flex-shrink: 0;
       transition: all .3s;
 }
@@ -210,6 +163,7 @@
 /* Add a hover effect if you want */
 .fa:hover {
   opacity: 0.7;
+
 }
 
 .fa-github {
@@ -231,4 +185,8 @@
 .fa-reddit {
   background: linear-gradient(45deg, #eb0808, #bb1414, #cf0b0b, #c20e0e, #ff0000, #fd1d1d);
         box-shadow: 0px 4px 30px rgba(120, 64, 190, 0.6);
+}
+
+.fas {
+width: 40px;
 }
