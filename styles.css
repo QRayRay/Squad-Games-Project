@@ -16,19 +16,22 @@
     flex:1;
     width:100%;
     height:auto;
+    padding: 20px;
+    border-color: rgb(192, 12, 12);
   }
   
   .header h1 {
     font-size: 50px;
     color: orange;
+    padding: 20px;
   }
   
 .logo {
-  float: center;
+  color:rgb(255, 189, 89);
+  border-style: solid;
   display: block;
-  text-align: center;
-  padding-bottom: 40px;
-  border-radius: 10%;
+  border-color: rgba(255, 189, 89, 0.795);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
   /* Style the top navigation bar */
@@ -39,6 +42,9 @@
     overflow: hidden;
     background-color: #333;
     border-style: solid;
+    border-color: rgba(255, 189, 89, 0.795);
+    border-radius: 40px;
+
     border-color: rgb(255, 189, 89);
     border-radius: 40px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -57,7 +63,13 @@
   
 .nav a:hover {
   background: linear-gradient(45deg, #333333, #626b73);
-  box-shadow: 0px 4px 30px rgba(63, 65, 67, 0.6);
+  filter: brightness(50%);
+-webkit-transition: all 1s ease;
+-moz-transition: all 1s ease;
+-o-transition: all 1s ease;
+-ms-transition: all 1s ease;
+transition: all 1s ease;
+box-shadow: 0px 4px 30px rgba(63, 65, 67, 0.6);
 }
   
   
@@ -123,7 +135,7 @@
 
   /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 800px) {
-    .leftcolumn, .rightcolumn {   
+    .leftcolumn, .rightcolumn, .logo {   
       width: 100%;
       padding: 0;
     }
@@ -153,6 +165,9 @@
       align-items: center;
       justify-content: center;
       color: #fff;
+      position: relative;
+      font-size: 30px;
+
       box-shadow: 0px 7px 30px rgba(43,98,169,0.5);
       position: relative;
       font-size: 30px;
@@ -163,8 +178,14 @@
 /* Add a hover effect if you want */
 .fa:hover {
   opacity: 0.7;
-
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: 1s ease;
 }
+
+
+
 
 .fa-github {
   background: linear-gradient(45deg, #333333, #626b73);
@@ -190,3 +211,9 @@
 .fas {
 width: 40px;
 }
+
+.fas {
+width: 40px;
+}
+
+/* Memebers CSS --------------------------------------------------- */
