@@ -1,14 +1,20 @@
+/* --------------------- Template CSS style Sheet --------------------- */
 * {
     box-sizing: border-box;
   }
   
   body {
     font-family: Arial;
-    padding: 10px;
-    background: linear-gradient(to bottom, rgb(192, 12, 12), #ece7ea);
+    background: linear-gradient(90deg, #c00c0c, #af5c5c, #e9e1e1, #d7d9df, #30449c, #0f0e2c);
   }
+
+
+
+
+
+/* --------------------- Template CSS style Sheet --------------------- */
   
-  /* Header/Blog Title */
+/* --------------------- Start of Header / GCG Logo --------------------- */
   .header {
     display: inline;
     text-align:center;
@@ -17,25 +23,25 @@
     width:100%;
     height:auto;
     padding: 20px;
-    border-color: rgb(192, 12, 12);
+    border-color: #c00c0c;
   }
-  
-  .header h1 {
-    font-size: 50px;
-    color: orange;
-    padding: 20px;
-  }
-  
-.logo {
-  color:rgb(255, 189, 89);
-  border-style: solid;
-  display: block;
-  border-color: rgba(255, 189, 89, 0.795);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
 
-  /* Style the top navigation bar */
-  .nav {
+  .logo {
+    color:rgb(255, 189, 89);
+    border-style: solid;
+    display: block;
+    border-color: rgba(255, 189, 89, 0.795);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+    border-color: rgb(192, 12, 12);
+    width: 100%;
+  }
+
+/* --------------------- End of Header / GCG Logo --------------------- */
+
+/* --------------------- Start of Top navigation bar code --------------------- */
+
+.nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -44,15 +50,10 @@
     border-style: solid;
     border-color: rgba(255, 189, 89, 0.795);
     border-radius: 40px;
-
-    border-color: rgb(255, 189, 89);
-    border-radius: 40px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 } 
-  
-  
-  /* Style the topnav links */
-  .nav a {
+
+.nav a {
   float: left;
   display: block;
   color: white;
@@ -71,9 +72,25 @@
 transition: all 1s ease;
 box-shadow: 0px 4px 30px rgba(63, 65, 67, 0.6);
 }
-  
-  
- 
+
+/* --------------------- End of Top navigation bar code --------------------- */
+
+/* --------------------- Start of Place Card for Sections --------------------- */
+
+.card {
+  background-color: rgb(255, 189, 89);
+  padding: 20px;
+  margin-top: 20px;
+  border-style: solid;
+  border-color: rgb(192, 12, 12);
+  border-radius: 40px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+div.card li, h1, h3 {
+  text-align: center;
+  list-style-type: none;
+}
 
   /* Left column */
   .leftcolumn {   
@@ -88,6 +105,49 @@ box-shadow: 0px 4px 30px rgba(63, 65, 67, 0.6);
     width: 25%;
     padding: 10px
   }
+
+
+/* --------------------- End of Place Card for Sections --------------------- */
+
+/* --------------------- Start of Logo for Event Card --------------------- */
+
+.event-logo {
+  color:rgb(255, 189, 89);
+  border-style: solid;
+  display: block;
+  border-color: rgba(255, 189, 89, 0.795);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 20px;
+  border-color: rgb(192, 12, 12);
+}
+
+/* --------------------- End of Logo for Event Card --------------------- */
+
+/* --------------------- Start of Member Card CSS --------------------- */
+
+/* Card ID is the Photo in the member Card */
+.logo-id {
+  float: center;
+  border-style: solid;
+  border-color: rgba(255, 189, 89, 0.795);
+  border-radius: 40px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+  
+/* --------------------- End of Member Card CSS --------------------- */
+ 
+  
+/* Create three equal columns that floats next to each other */
+
+
+
   
   /* Fake image */
   .fakeimg {
@@ -96,33 +156,33 @@ box-shadow: 0px 4px 30px rgba(63, 65, 67, 0.6);
     padding: 20px;
   }
   
-  /* Add a card effect for articles */
-  .card {
-    background-color: rgb(255, 189, 89);
-    padding: 20px;
-    margin-top: 20px;
-    border-style: solid;
-    border-color: rgb(192, 12, 12);
-    border-radius: 40px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
   
-  /* Clear floats after the columns */
+  
+
+
+
+ 
+
+  /* --------------------- Clear floats after the columns --------------------- */
   .row:after {
     content: "";
+    column-count: 3;
     display: table;
     clear: both;
   }
+
   
-  /* Footer */
+  /* --------------------- Start of Footer Bar --------------------- */
+
   .footer {
     padding: 20px;
     text-align: center;
-    background: #ddd;
+    background: #333;
     margin-top: 20px;
-    border-color: rgb(192, 12, 12);
+    border-style: solid;
+    border-color: rgba(255, 189, 89, 0.795);
     border-radius: 40px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(253, 253, 253, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   
   .footer a {
@@ -133,87 +193,76 @@ box-shadow: 0px 4px 30px rgba(63, 65, 67, 0.6);
     text-decoration: none;
   }
 
-  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 800px) {
-    .leftcolumn, .rightcolumn, .logo {   
-      width: 100%;
-      padding: 0;
-    }
+  .fa {
+    display: inline-flex;
+        width: 55px;
+        height: 55px;
+        margin: 20px;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        position: relative;
+        font-size: 30px;
+        box-shadow: 0px 7px 30px rgba(43,98,169,0.5);
+        position: relative;
+        font-size: 30px;
+        flex-shrink: 0;
+        transition: all .3s;
   }
   
-  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-  @media screen and (max-width: 400px) {
-    .nav a {
-      float: none;
-      width: 100%;
-    }
+  .fa:hover {
+    opacity: 0.7;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1s ease;
+  }
+  .fa-github {
+    background: linear-gradient(45deg, #333333, #626b73);
+    box-shadow: 0px 4px 30px rgba(63, 65, 67, 0.6);
+  }
+  .fa-facebook {
+    background: linear-gradient(45deg, #3b5998, #0078d7);
+          box-shadow: 0px 4px 30px rgba(43, 98, 169, 0.5);
+  }
+  .fa-instagram {
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+          box-shadow: 0px 4px 30px rgba(120, 64, 190, 0.6);
+  }
+  .fa-reddit {
+    background: linear-gradient(45deg, #eb0808, #bb1414, #cf0b0b, #c20e0e, #ff0000, #fd1d1d);
+          box-shadow: 0px 4px 30px rgba(120, 64, 190, 0.6);
+  }
+  .fas {
+  width: 40px;
   }
 
+  /* --------------------- End of Footer Bar --------------------- */
 
- .column1of3, .column2of3, .column3of3 {
-  float: left;
-  width: 32%;
-  margin: 12px;
- }
+  
+  
 
- .fa {
-  display: inline-flex;
-      width: 55px;
-      height: 55px;
-      margin: 20px;
-      border-radius: 50%;
-      align-items: center;
-      justify-content: center;
-      color: #fff;
-      position: relative;
-      font-size: 30px;
+  
 
-      box-shadow: 0px 7px 30px rgba(43,98,169,0.5);
-      position: relative;
-      font-size: 30px;
-      flex-shrink: 0;
-      transition: all .3s;
-}
 
-/* Add a hover effect if you want */
-.fa:hover {
-  opacity: 0.7;
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
-  transition: 1s ease;
+
+
+
+ /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+ @media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn, .logo, .event-logo, .card, .card-id, .column {   
+    width: 100%;
+    padding: 10;
+    margin-right: 20px;
+  }
 }
 
 
-
-
-.fa-github {
-  background: linear-gradient(45deg, #333333, #626b73);
-  box-shadow: 0px 4px 30px rgba(63, 65, 67, 0.6);
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .nav a {
+    float: none;
+    width: 100%;
+  }
 }
-
-.fa-facebook {
-  background: linear-gradient(45deg, #3b5998, #0078d7);
-        box-shadow: 0px 4px 30px rgba(43, 98, 169, 0.5);
-      
-}
-
-.fa-instagram {
-  background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
-        box-shadow: 0px 4px 30px rgba(120, 64, 190, 0.6);
-}
-
-.fa-reddit {
-  background: linear-gradient(45deg, #eb0808, #bb1414, #cf0b0b, #c20e0e, #ff0000, #fd1d1d);
-        box-shadow: 0px 4px 30px rgba(120, 64, 190, 0.6);
-}
-
-.fas {
-width: 40px;
-}
-
-.fas {
-width: 40px;
-}
-
-/* Memebers CSS --------------------------------------------------- */
