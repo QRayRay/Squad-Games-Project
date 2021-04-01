@@ -90,6 +90,7 @@ box-shadow: 0px 4px 30px rgba(63, 65, 67, 0.6);
 div.card li, h1, h3 {
   text-align: center;
   list-style-type: none;
+  padding: 5px;
 }
 
   /* Left column */
@@ -103,7 +104,7 @@ div.card li, h1, h3 {
   .rightcolumn {
     float: left;
     width: 25%;
-    padding: 10px
+    padding-left: 10px;
   }
 
 
@@ -132,6 +133,7 @@ div.card li, h1, h3 {
   border-color: rgba(255, 189, 89, 0.795);
   border-radius: 40px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 100%;
 }
 
 
@@ -193,6 +195,10 @@ div.card li, h1, h3 {
     text-decoration: none;
   }
 
+  .social-media {
+    color: white;
+  }
+
   .fa {
     display: inline-flex;
         width: 55px;
@@ -232,7 +238,7 @@ div.card li, h1, h3 {
   }
   .fa-reddit {
     background: linear-gradient(45deg, #eb0808, #bb1414, #cf0b0b, #c20e0e, #ff0000, #fd1d1d);
-          box-shadow: 0px 4px 30px rgba(120, 64, 190, 0.6);
+          box-shadow: 0px 4px 30px rgba(206, 13, 13, 0.6);
   }
   .fas {
   width: 40px;
